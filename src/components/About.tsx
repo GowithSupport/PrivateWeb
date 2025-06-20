@@ -10,10 +10,10 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="py-20 bg-gradient-to-br from-yellow-50 to-emerald-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#1a365d] mb-6">
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">
             About Ali Rahimi - Your IT Strategic Partner
           </h2>
         </div>
@@ -30,9 +30,9 @@ const About = () => {
 
           <div className="grid grid-cols-2 gap-6">
             {stats.map((stat, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-                <stat.icon className="mx-auto mb-4 text-[#3182ce]" size={48} />
-                <div className="text-2xl font-bold text-[#1a365d] mb-2">{stat.number}</div>
+              <div key={index} className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow border-l-4 border-sky-400">
+                <stat.icon className="mx-auto mb-4 text-emerald-600" size={48} />
+                <div className="text-2xl font-bold text-gray-800 mb-2">{stat.number}</div>
                 <div className="text-gray-600 text-sm">{stat.label}</div>
               </div>
             ))}

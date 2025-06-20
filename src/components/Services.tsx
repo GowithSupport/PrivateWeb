@@ -39,7 +39,7 @@ const Services = () => {
     <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#1a365d] mb-6">
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">
             Comprehensive IT Consulting Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -51,10 +51,10 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-gray-50 p-8 rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="bg-gradient-to-br from-yellow-50 to-sky-50 p-8 rounded-xl hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-emerald-400"
             >
-              <service.icon className="text-[#3182ce] mb-6" size={48} />
-              <h3 className="text-xl font-bold text-[#1a365d] mb-4">{service.title}</h3>
+              <service.icon className="text-sky-600 mb-6" size={48} />
+              <h3 className="text-xl font-bold text-gray-800 mb-4">{service.title}</h3>
               <p className="text-gray-600 leading-relaxed">{service.description}</p>
             </div>
           ))}

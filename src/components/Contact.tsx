@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -43,10 +42,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-yellow-50 to-emerald-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#1a365d] mb-6">
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">
             Ready to Transform Your IT Infrastructure?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -57,44 +56,44 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
-            <h3 className="text-2xl font-bold text-[#1a365d] mb-8">Get In Touch</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-8">Get In Touch</h3>
             
             <div className="space-y-6">
               <div className="flex items-center">
-                <Phone className="text-[#3182ce] mr-4" size={24} />
+                <Phone className="text-sky-600 mr-4" size={24} />
                 <div>
-                  <div className="font-semibold text-[#1a365d]">Phone</div>
+                  <div className="font-semibold text-gray-800">Phone</div>
                   <div className="text-gray-600">949-769-4428</div>
                 </div>
               </div>
               
               <div className="flex items-center">
-                <Mail className="text-[#3182ce] mr-4" size={24} />
+                <Mail className="text-sky-600 mr-4" size={24} />
                 <div>
-                  <div className="font-semibold text-[#1a365d]">Email</div>
+                  <div className="font-semibold text-gray-800">Email</div>
                   <div className="text-gray-600">arahimi@gowithsupport.com</div>
                 </div>
               </div>
               
               <div className="flex items-center">
-                <MapPin className="text-[#3182ce] mr-4" size={24} />
+                <MapPin className="text-sky-600 mr-4" size={24} />
                 <div>
-                  <div className="font-semibold text-[#1a365d]">Location</div>
+                  <div className="font-semibold text-gray-800">Location</div>
                   <div className="text-gray-600">Serving clients nationwide from Southern California</div>
                 </div>
               </div>
             </div>
 
-            <div className="mt-12 p-6 bg-gradient-to-r from-[#3182ce] to-[#63b3ed] rounded-xl text-white">
+            <div className="mt-12 p-6 bg-gradient-to-r from-sky-500 to-emerald-500 rounded-xl text-white">
               <h4 className="text-xl font-bold mb-4">Get Your Free IT Assessment Today</h4>
-              <p className="text-blue-100">
+              <p className="text-sky-100">
                 Schedule a consultation to discuss your IT challenges and discover opportunities for optimization and growth.
               </p>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-xl shadow-lg">
+          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-yellow-400">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -180,7 +179,7 @@ const Contact = () => {
 
               <Button 
                 type="submit" 
-                className="w-full bg-[#3182ce] hover:bg-[#1a365d] text-white py-3 text-lg font-semibold"
+                className="w-full bg-sky-500 hover:bg-emerald-500 text-white py-3 text-lg font-semibold"
               >
                 <Send className="mr-2" size={20} />
                 Send Message
