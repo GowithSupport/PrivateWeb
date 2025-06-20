@@ -78,10 +78,10 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gradient-to-br from-emerald-50 to-sky-50">
+    <section id="experience" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">
+          <h2 className="text-4xl font-bold text-[#1a365d] mb-6">
             Proven Track Record of Success
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -93,17 +93,17 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-8 border-l-4 border-yellow-400"
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-8"
             >
               <div className="flex flex-col lg:flex-row lg:items-start gap-6">
                 {/* Icon and Header */}
                 <div className="flex items-start gap-4 lg:w-1/3">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-sky-500 to-emerald-500 rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#3182ce] rounded-lg flex items-center justify-center">
                     <exp.icon className="text-white" size={24} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-1">{exp.company}</h3>
-                    <p className="text-lg font-semibold text-sky-600 mb-2">{exp.position}</p>
+                    <h3 className="text-2xl font-bold text-[#1a365d] mb-1">{exp.company}</h3>
+                    <p className="text-lg font-semibold text-[#3182ce] mb-2">{exp.position}</p>
                     <div className="flex items-center text-gray-600">
                       <Calendar className="mr-2" size={16} />
                       <span className="font-medium">{exp.period}</span>
@@ -118,7 +118,7 @@ const Experience = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {exp.achievements.map((achievement, achIndex) => (
                       <div key={achIndex} className="flex items-start">
-                        <TrendingUp className="text-emerald-500 mr-3 mt-1 flex-shrink-0" size={16} />
+                        <TrendingUp className="text-green-500 mr-3 mt-1 flex-shrink-0" size={16} />
                         <span className="text-gray-700">{achievement}</span>
                       </div>
                     ))}
