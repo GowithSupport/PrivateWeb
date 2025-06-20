@@ -20,8 +20,8 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="w-8 h-8 bg-gradient-to-r from-emerald-600 via-sky-600 to-yellow-400 rounded-full mr-3"></div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 via-sky-600 to-yellow-400 bg-clip-text text-transparent">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-900 to-gray-400 rounded-full mr-3"></div>
+            <span className="text-2xl font-bold bg-gradient-to-r from-blue-900 to-gray-400 bg-clip-text text-transparent">
               GowithSupport
             </span>
           </div>

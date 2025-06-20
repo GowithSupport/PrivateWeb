@@ -12,8 +12,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <div className="flex items-center mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-yellow-200 via-emerald-300 to-sky-300 rounded-full mr-3"></div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-yellow-200 to-white bg-clip-text text-transparent">
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-900 to-gray-400 rounded-full mr-3"></div>
+              <span className="text-2xl font-bold bg-gradient-to-r from-blue-900 to-gray-200 bg-clip-text text-transparent">
                 GowithSupport
               </span>
             </div>
