@@ -23,7 +23,7 @@ const Footer = () => {
             <div className="flex space-x-6 text-sm">
               <a href="#" className="hover:text-[#63b3ed] transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-[#63b3ed] transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-[#63b3ed] transition-colors">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/ali-rahimi-8a60255b/" target="_blank" rel="noopener noreferrer" className="hover:text-[#63b3ed] transition-colors">LinkedIn</a>
             </div>
             
             <button 
