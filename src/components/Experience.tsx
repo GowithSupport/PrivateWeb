@@ -87,56 +87,44 @@ const Experience = () => {
           </p>
         </div>
 
-        {/* Vertical Timeline */}
-        <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-[#3182ce] transform md:-translate-x-0.5"></div>
-          
-          <div className="space-y-12">
-            {experiences.map((exp, index) => (
-              <div 
-                key={index} 
-                className={`flex flex-col md:flex-row items-start md:items-center gap-8 ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
-              >
-                {/* Timeline node */}
-                <div className="absolute left-2 md:left-1/2 w-4 h-4 bg-[#3182ce] rounded-full transform md:-translate-x-2 flex items-center justify-center">
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
-                </div>
-
-                {/* Content card */}
-                <div className={`flex-1 ml-12 md:ml-0 ${index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'}`}>
-                  <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                    <div className="flex items-center mb-4">
-                      <exp.icon className="text-[#3182ce] mr-3" size={24} />
-                      <div>
-                        <h3 className="text-2xl font-bold text-[#1a365d]">{exp.company}</h3>
-                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                          <p className="text-lg font-semibold text-[#3182ce]">{exp.position}</p>
-                          <div className="flex items-center text-gray-600 mt-1 sm:mt-0">
-                            <Calendar className="mr-2" size={16} />
-                            <span className="font-medium">{exp.period}</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <p className="text-gray-700 mb-6 font-medium">{exp.description}</p>
-                    
-                    <div className="grid grid-cols-1 gap-3">
-                      {exp.achievements.map((achievement, achIndex) => (
-                        <div key={achIndex} className="flex items-start">
-                          <TrendingUp className="text-green-500 mr-3 mt-1 flex-shrink-0" size={16} />
-                          <span className="text-gray-700">{achievement}</span>
-                        </div>
-                      ))}
+        <div className="space-y-8">
+          {experiences.map((exp, index) => (
+            <div 
+              key={index} 
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow p-8"
+            >
+              <div className="flex flex-col lg:flex-row lg:items-start gap-6">
+                {/* Icon and Header */}
+                <div className="flex items-start gap-4 lg:w-1/3">
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#3182ce] rounded-lg flex items-center justify-center">
+                    <exp.icon className="text-white" size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-[#1a365d] mb-1">{exp.company}</h3>
+                    <p className="text-lg font-semibold text-[#3182ce] mb-2">{exp.position}</p>
+                    <div className="flex items-center text-gray-600">
+                      <Calendar className="mr-2" size={16} />
+                      <span className="font-medium">{exp.period}</span>
                     </div>
                   </div>
                 </div>
+                
+                {/* Content */}
+                <div className="lg:w-2/3">
+                  <p className="text-gray-700 mb-6 font-medium text-lg">{exp.description}</p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {exp.achievements.map((achievement, achIndex) => (
+                      <div key={achIndex} className="flex items-start">
+                        <TrendingUp className="text-green-500 mr-3 mt-1 flex-shrink-0" size={16} />
+                        <span className="text-gray-700">{achievement}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Menu, X, Phone, Mail, Zap } from 'lucide-react';
+import { Menu, X, Phone, Mail, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -20,12 +20,11 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Updated Logo */}
           <div className="flex items-center">
-            <div className="flex flex-col items-center mr-3">
-              <Zap className="h-6 w-6 text-[#3182ce] mb-1" />
-              <div className="flex items-center">
-                <span className="text-xl font-bold text-white bg-[#1a365d] px-2 py-1 rounded-l">Charge</span>
-                <span className="text-xl font-bold text-white bg-green-600 px-2 py-1 rounded-r">Trux</span>
-              </div>
+            <div className="flex items-center">
+              <div className="w-8 h-0.5 bg-gradient-to-r from-[#1a365d] to-[#3182ce] mr-3"></div>
+              <span className="text-2xl font-bold bg-gradient-to-r from-[#1a365d] to-[#3182ce] bg-clip-text text-transparent">
+                GowithSupport
+              </span>
             </div>
           </div>
 
