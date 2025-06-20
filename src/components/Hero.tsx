@@ -46,7 +46,7 @@ const Hero = () => {
                 <Calendar className="mr-2 text-[#3182ce]" size={20} />
                 <span className="text-[#3182ce]">Schedule Consultation</span>
               </Button>
-              <Button variant="outline" className="border-2 border-white text-white hover:text-[#1a365d] px-8 py-3 text-lg font-semibold bg-[3182ce] bg-[#3182ce]">
+              <Button variant="outline" className="border-2 border-white px-8 py-3 text-lg font-semibold bg-[3182ce] bg-slate-200 hover:bg-slate-100 text-[#3182ce]">
                 <FileText className="mr-2" size={20} />
                 View Case Studies
               </Button>
