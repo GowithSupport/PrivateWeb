@@ -42,14 +42,14 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons - Fixed text color visibility */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 onClick={scrollToContact}
                 className="bg-white text-[#1a365d] hover:bg-gray-100 px-8 py-3 text-lg font-semibold"
               >
-                <Calendar className="mr-2" size={20} />
-                Schedule Consultation
+                <Calendar className="mr-2 text-[#3182ce]" size={20} />
+                <span className="text-[#3182ce]">Schedule Consultation</span>
               </Button>
               <Button 
                 variant="outline"

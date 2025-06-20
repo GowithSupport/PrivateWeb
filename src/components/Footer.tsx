@@ -1,5 +1,5 @@
 
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp, Zap } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -12,12 +12,13 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <div className="flex items-center mb-4">
-              <img 
-                src="/lovable-uploads/1fe4ec79-3591-43c5-8d80-68c1041eb791.png" 
-                alt="Gowith Support Logo" 
-                className="h-8 w-auto mr-3"
-              />
-              <div className="text-xl font-bold">Gowith Support</div>
+              <div className="flex flex-col items-center mr-3">
+                <Zap className="h-6 w-6 text-[#3182ce] mb-1" />
+                <div className="flex items-center">
+                  <span className="text-lg font-bold text-white bg-[#1a365d] px-2 py-1 rounded-l border border-white">Charge</span>
+                  <span className="text-lg font-bold text-white bg-green-600 px-2 py-1 rounded-r border border-white">Trux</span>
+                </div>
+              </div>
             </div>
             <p className="text-blue-200 text-sm">Your Strategic IT Partner</p>
           </div>
@@ -41,7 +42,7 @@ const Footer = () => {
 
         <div className="border-t border-blue-800 mt-8 pt-8 text-center">
           <p className="text-blue-200 text-sm">
-            © 2024 Gowith Support. All rights reserved.
+            © 2024 ChargeTrux. All rights reserved.
           </p>
         </div>
       </div>
