@@ -1,3 +1,4 @@
+
 import { TrendingUp, Shield, Globe } from 'lucide-react';
 
 const CaseStudies = () => {

@@ -1,3 +1,4 @@
+
 import { Award, Cloud, Shield, Database, Network, Cog } from 'lucide-react';
 
 const Technologies = () => {

@@ -18,10 +18,10 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Updated Logo with new colors */}
+          {/* Logo */}
           <div className="flex items-center">
-            <div className="w-8 h-8 bg-gradient-to-r from-yellow-200 via-emerald-300 to-sky-300 rounded-full mr-3"></div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-yellow-500 via-emerald-500 to-sky-500 bg-clip-text text-transparent">
+            <div className="w-8 h-8 bg-gradient-to-r from-emerald-600 via-sky-600 to-yellow-400 rounded-full mr-3"></div>
+            <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 via-sky-600 to-yellow-400 bg-clip-text text-transparent">
               GowithSupport
             </span>
           </div>

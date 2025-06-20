@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="pt-24 pb-16 bg-gradient-to-br from-yellow-200 via-emerald-300 to-sky-300 text-gray-800">
+    <section id="home" className="pt-24 pb-16 bg-gradient-to-br from-yellow-50 via-emerald-50 to-sky-50 text-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
@@ -63,7 +63,7 @@ const Hero = () => {
               alt="Ali Rahimi - IT Executive" 
               className="rounded-2xl shadow-2xl w-full max-w-xs mx-auto animate-scale-in" 
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-yellow-200/20 to-transparent rounded-2xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-emerald-200/20 to-transparent rounded-2xl"></div>
           </div>
         </div>
       </div>
