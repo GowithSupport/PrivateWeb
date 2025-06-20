@@ -47,29 +47,31 @@ const Experience = () => {
     },
     {
       company: 'Sovereign Health Group',
-      position: 'IT Manager',
-      period: '2018-2021',
-      description: 'Healthcare IT transformation with HIPAA compliance leadership',
+      position: 'IT Manager to Director of IT',
+      period: '2011-2021',
+      description: 'Healthcare IT transformation with HIPAA compliance leadership over 10-year tenure',
       achievements: [
         'Migrated healthcare organization to AWS cloud infrastructure',
         'Implemented HIPAA-compliant security framework and policies',
         'Integrated NetSuite and Dynamics 365 saving $700K annually',
         'Deployed multi-location VoIP system connecting US, UK, and India',
-        'Led IT team through Joint Commission accreditation process'
+        'Led IT team through Joint Commission accreditation process',
+        'Promoted from IT Manager to Director of IT over tenure'
       ],
       icon: Users
     },
     {
       company: 'Earlier Technology Roles',
       position: 'Senior Infrastructure Engineer',
-      period: '2001-2018',
-      description: '17+ years building enterprise infrastructure foundations',
+      period: '2001-2011',
+      description: '10+ years building enterprise infrastructure foundations',
       achievements: [
         'VMware virtualization deployments across multiple data centers',
         'Cisco networking infrastructure design and implementation',
         'Microsoft Exchange and Active Directory enterprise deployments',
         'Database administration for SQL Server and Oracle environments',
-        'Emergency response and disaster recovery planning'
+        'Emergency response and disaster recovery planning',
+        'Network security implementation and monitoring'
       ],
       icon: Building
     }
