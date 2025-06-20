@@ -20,12 +20,9 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           {/* Updated Logo */}
           <div className="flex items-center">
-            <div className="flex items-center">
-              <div className="w-8 h-0.5 bg-gradient-to-r from-[#1a365d] to-[#3182ce] mr-3"></div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-[#1a365d] to-[#3182ce] bg-clip-text text-transparent">
-                GowithSupport
-              </span>
-            </div>
+            <span className="text-2xl font-bold bg-gradient-to-r from-[#1a365d] to-[#3182ce] bg-clip-text text-transparent">
+              GowithSupport
+            </span>
           </div>
 
           {/* Desktop Navigation */}
